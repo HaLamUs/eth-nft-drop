@@ -85,6 +85,35 @@ npm create-next-app -e with-tailwindcss my-project
   - 🔴 Server side rendering 
     <br/> This one for Google robot, we don't return components, we return the data in json format
 
+  - 🔴 Typescript
+    <br/> We need define the type to avoid warning
+    ```js
+    // typings.d.ts where you specify how object should look
+    interface Image {
+     asset: {
+      url: string
+     }
+    }
+    export interface Creator {
+     _id: string
+     name: string
+     image: Image
+     bio: string
+    }
+    
+    export interface Collection {
+     _id: string
+     title: string
+     creator: Creator
+     address: string
+    }
+    
+    // index.js 
+    interface Props {
+     collections: Collection[]
+    }
+    ```
+    Typescript using interface to define type
 
 ## THE end 
 I see no reason to use Sanity as content center (CMS). 🤷‍♂️
