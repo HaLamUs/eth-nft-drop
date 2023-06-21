@@ -8,6 +8,32 @@ This project is my REACTION to the video
 </div>
 
 ## Detail 
+### Tech stack 
+- <a href="https://thirdweb.com/"> thirdweb </a>
+- <a href="https://nextjs.org/"> Nextjs </a>
+- <a href="https://tailwindcss.com/"> tailwindcss </a>
+
+### Kick-start project
+```
+npm create-next-app -e with-tailwindcss my-project
+```
+### Project structure
+- 🗂 Folder pages where all pages in your site placed
+- 🌈 TailwindCSS allows you quickly applying CSS to components
+  - Font
+  - Text size
+  - Color
+- Nextjs 
+  - Replace class component by function component
+  ```js
+   function Search() {
+      return (
+        <div> Search <div/>
+      )
+   }
+   
+   export default Search
+  ```
 
 ---
 ## Author
