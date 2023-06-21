@@ -72,8 +72,20 @@ npm create-next-app -e with-tailwindcss my-project
       <Component {...pageProps} />
      </ThirdwebProvider>
     )
-    ```  
+    ``` 
     
+    👍 Beside that, thirdweb provides NFT drop, which you can just upload the images and hit Deploy button
+    Instead of 1.png and 1.json we can use bulk upload replace json files by .csv
+    
+  - 🖖 Vercel: 
+    <br/ >https://vercel.com/
+    <br/> You can deploy your FE for free, connecting thru github
+  - 😲 Opensea test net 
+   <br/> https://testnets.opensea.io/
+
+
+## THE end 
+I see no reason to use Sanity as content center (CMS). 🤷‍♂️
 
 ---
 ## Author
