@@ -82,6 +82,8 @@ npm create-next-app -e with-tailwindcss my-project
     <br/> You can deploy your FE for free, connecting thru github
   - 😲 Opensea test net 
    <br/> https://testnets.opensea.io/
+  - 🔴 Server side rendering 
+    <br/> This one for Google robot, we don't return components, we return the data in json format
 
 
 ## THE end 
