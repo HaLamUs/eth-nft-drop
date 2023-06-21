@@ -54,11 +54,26 @@ npm create-next-app -e with-tailwindcss my-project
     
     ```lg:h-96 lg:w-72``` meaning on large screen (height, width) = (96, 72)
     
+    ``` <button className="px-4 py-2 lg:px-5 lg:py3"/> ``` meaning ONLY (5,3) in large screen, OTHER screens (small, medium) will be (4,2). 
+    Same apply for ```flex``` (small, medium) large will go with ```grid```
+    
+    ```flex-1 flex-col``` 1 meaning get all the space
+    
     If not large screen case, it will back to 'flex' mode, meaning it will layout at it's ease
     <br/> ⚠️ Flex it NOT Grid
-    <br/>Flex: 1 dimensional layout. Grid: 2
+    <br/>Flex: 1 dimensional layout, will expand all items in 1 line then go to next line. Grid: 2
     <br/>  https://www.geeksforgeeks.org/comparison-between-css-grid-css-flexbox/
     <br /> Fine to use both at the same component
+    
+  - Thirdweb: Wrap your entire app (_app.tsx)
+    ```js
+    return(
+     <ThirdwebProvider desiredChainId={ChainId.bsc}>
+      <Component {...pageProps} />
+     </ThirdwebProvider>
+    )
+    ```  
+    
 
 ---
 ## Author
