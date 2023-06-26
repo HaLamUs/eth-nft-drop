@@ -16,6 +16,7 @@ This project is my REACTION to the video ⬇️
 ### Sketch
 <img src="https://github.com/HaLamUs/eth-nft-drop/blob/main/assets/sketch.png">
 
+🤓 Instead of editing in Mongo Atlas, we can use CMS for marketing team can edit too.
 
 ### Kick-start project
 ```
@@ -142,7 +143,7 @@ npm create-next-app -e with-tailwindcss my-project
     - Next.js is server render/ pre-rendering
       <br/> *Actually*, both `React` and `Next.js` are hosted in Remote server so both are SSR (server side rendering) BUT
       react render page by download js files instead html tags like `Next.js` so Next is lil better
- 
+
 SSR | CSR
 :--: | :--:
 <img src="https://github.com/HaLamUs/eth-nft-drop/blob/main/assets/ssr.png" width="1200" /> | <img src="https://github.com/HaLamUs/eth-nft-drop/blob/main/assets/csr.png" width="1200" />
@@ -151,6 +152,38 @@ SSR | CSR
     https://www.freecodecamp.org/news/next-vs-react/
     https://blog.logrocket.com/create-react-app-vs-next-js-performance-differences/
     
+- 🐸 Router
+  ```js
+  <Link href={/nft/collection.slug.current}>
+    <div>
+  </Link>
+  ```
+  `param?.id` for getting params in url
+  
+  https://nextjs.org/docs/pages/building-your-application/routing/linking-and-navigating
+
+- 🐸  useEffect
+
+  without `conditions` it will run every time it's render
+
+```js
+function NFTDropPage({collection}: Props) {
+  const [claimedSupply, setClaimedSupply] = useState<number>(0)
+  const nftDrop = useNFTDrop(collection.address)
+
+  useEffect(()=> {
+    if (!nftDrop) return; //defensive programming
+
+    const fetchNFTDropData = async () => {
+      const claimed = await nftDrop.getAllClaimed();
+
+      setClaimedSupply(claimed.length)
+    }
+    fetchNFTDropData()
+  },[nftDrop])
+}
+```
+
 
 ## THE end 
 I see no reason to use Sanity as content center (CMS). 🤷‍♂️
