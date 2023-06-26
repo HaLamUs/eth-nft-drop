@@ -120,6 +120,25 @@ npm create-next-app -e with-tailwindcss my-project
     ```
     Typescript using interface to define type
 
+  - 🐸🐸🐸 Fetch
+    - In ```Next.js``` using `getServerSideProps` to fetch data everytime it renders the page
+
+      You should use getServerSideProps only if you need to render a page whose data must be fetched at request time
+      https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props
+    
+    - Next.js is server render/ pre-rendering
+      <br/> *Actually*, both `React` and `Next.js` are hosted in Remote server so both are SSR (server side rendering) BUT
+      react render page by download js files instead html tags like `Next.js` so Next is lil better
+ 
+SSR | CSR
+:--: | :--:
+<img src="https://github.com/HaLamUs/eth-nft-drop/blob/main/assets/ssr.png" width="1200" /> | <img src="https://github.com/HaLamUs/eth-nft-drop/blob/main/assets/csr.png" width="1200" />
+
+
+    https://www.freecodecamp.org/news/next-vs-react/
+    https://blog.logrocket.com/create-react-app-vs-next-js-performance-differences/
+    
+
 ## THE end 
 I see no reason to use Sanity as content center (CMS). 🤷‍♂️
 
