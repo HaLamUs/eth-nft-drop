@@ -171,6 +171,11 @@ function NFTDropPage({collection}: Props) {
   const [claimedSupply, setClaimedSupply] = useState<number>(0)
   const nftDrop = useNFTDrop(collection.address)
 
+  //🤌 CAN use many useEffect as you want 
+  useEffect(()=> {
+    //fetchPrice
+  }, [])
+  
   useEffect(()=> {
     if (!nftDrop) return; //defensive programming
 
@@ -186,7 +191,10 @@ function NFTDropPage({collection}: Props) {
 
 
 ## THE end 
-I see no reason to use Sanity as content center (CMS). 🤷‍♂️
+1. <del>I see no reason to use Sanity as content center (CMS). 🤷‍♂️
+2. Surprisingly, this entire app despite strongly is a <b>Another blockchain tutorial<b>, but not a single line of Sol written.
+thirdweb is all you need 🤔
+3. Using testnet open-sea to check minting instead bsc-scan 👏
 
 ---
 ## Author
