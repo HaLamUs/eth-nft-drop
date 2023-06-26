@@ -65,10 +65,23 @@ npm create-next-app -e with-tailwindcss my-project
     If not large screen case, it will back to 'flex' mode, meaning it will layout at it's ease
     <br/> ⚠️ Flex it NOT Grid
       - Flex: 1 dimensional layout, will expand all items in 1 line then go to next line.
-      - Grid: 2
+          <br/>Flex everything is on the same row
+      - Grid: 2 dimensionals
+          <br/>Split the screen by cols
     <br/>
     https://www.geeksforgeeks.org/comparison-between-css-grid-css-flexbox/
-    <br/> Fine to use both at the same component
+    <br/> Fine to use both at the same component which means depends on
+  ```js
+    // by row, but each row will divide by number of cols
+      <flex>
+        <grid />
+      <flex/>
+    // or 
+    // by number of cols, but each col will layout in one row
+      <grid>
+        <flex />
+      <grid/>
+    ``` 
     
   - Thirdweb: Wrap your entire app (_app.tsx)
     ```js
