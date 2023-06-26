@@ -1,7 +1,7 @@
 # eth-nft-drop
 
 ## Intro 
-This project is my REACTION to the video 
+This project is my REACTION to the video ⬇️
 
 <div>
   <a href="https://www.youtube.com/watch?v=_siRFuLEgGQ"><img src="https://img.youtube.com/vi/_siRFuLEgGQ/0.jpg" alt="IMAGE ALT TEXT"></a>
@@ -38,7 +38,6 @@ npm create-next-app -e with-tailwindcss my-project
   - Path 
     - Ex: localhost:3000/NFT/para-farm
     - Create folder NFT under pages folder then ```[id].tsx``` this mean wildcard
-    - 
   - Flexbox
     - https://www.w3schools.com/css/css3_flexbox.asp
     ``` js
@@ -61,9 +60,11 @@ npm create-next-app -e with-tailwindcss my-project
     
     If not large screen case, it will back to 'flex' mode, meaning it will layout at it's ease
     <br/> ⚠️ Flex it NOT Grid
-    <br/>Flex: 1 dimensional layout, will expand all items in 1 line then go to next line. Grid: 2
-    <br/>  https://www.geeksforgeeks.org/comparison-between-css-grid-css-flexbox/
-    <br /> Fine to use both at the same component
+      - Flex: 1 dimensional layout, will expand all items in 1 line then go to next line.
+      - Grid: 2
+    <br/>
+    https://www.geeksforgeeks.org/comparison-between-css-grid-css-flexbox/
+    <br/> Fine to use both at the same component
     
   - Thirdweb: Wrap your entire app (_app.tsx)
     ```js
@@ -75,7 +76,7 @@ npm create-next-app -e with-tailwindcss my-project
     ``` 
     
     👍 Beside that, thirdweb provides NFT drop, which you can just upload the images and hit Deploy button
-    Instead of 1.png and 1.json we can use bulk upload replace json files by .csv
+    Instead of ```1.png``` and ```1.json``` we can use bulk upload replace json files by .csv
     
   - 🖖 Vercel: 
     <br/ >https://vercel.com/
