@@ -13,6 +13,10 @@ This project is my REACTION to the video ⬇️
 - <a href="https://nextjs.org/"> Nextjs </a>
 - <a href="https://tailwindcss.com/"> tailwindcss </a>
 
+### Sketch
+<img src="https://github.com/HaLamUs/eth-nft-drop/blob/main/assets/sketch.png">
+
+
 ### Kick-start project
 ```
 npm create-next-app -e with-tailwindcss my-project
