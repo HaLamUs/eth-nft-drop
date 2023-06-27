@@ -14,6 +14,8 @@ This project is my REACTION to the video ⬇️
 - <a href="https://tailwindcss.com/"> tailwindcss </a>
 
 ### Sketch
+*Not entirely correct*
+
 <img src="https://github.com/HaLamUs/eth-nft-drop/blob/main/assets/sketch.png">
 
 🤓 Instead of editing in Mongo Atlas, we can use CMS for marketing team can edit too.
@@ -97,13 +99,10 @@ npm create-next-app -e with-tailwindcss my-project
     Instead of ```1.png``` and ```1.json``` we can use bulk upload replace json files by .csv
     
   - 🖖 Vercel: 
-    <br/ >https://vercel.com/
+    <br/>https://vercel.com/
     <br/> You can deploy your FE for free, connecting thru github
   - 😲 Opensea test net 
    <br/> https://testnets.opensea.io/
-  - 🔴 Server side rendering 
-    <br/> This one for Google robot, we don't return components, we return the data in json format
-
   - 🔴 Typescript
     <br/> We need define the type to avoid warning
     ```js
